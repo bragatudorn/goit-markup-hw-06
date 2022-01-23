@@ -17,10 +17,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 <body>
+    <!------------------ HEADER------------------->
     <header class="header">
        <div class="container header-container"> 
         <a class="link" href="/"><span class="first-logo">Web</span><span class="header-logo">Studio</span></a>
-        <!-- Навигация на другие страницы -->
+
+        <!------------------ Навигация на другие страницы -------------->
         <nav>
             <ul class="list header-list">
                 <li class="header-item">
@@ -35,7 +37,6 @@
             </ul>            
         </nav>
         <ul class="list header-connect">
-            
             <li class="header-item">
                 <a class="link header-tel contact-icon-item" href="info@devstudio.com">
                     <svg class="contact-email-icon" width="16" height="12">
@@ -51,14 +52,15 @@
         </ul>          
       </div>
     </header>
+    <!-------------------------- MAIN-------------------------->
     <main>
-
         <section class="hero hero-background"> 
             <div class="container">
             <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
             <button class="hero-btn" type="button" data-modal-open>Заказать услугу</button>
             </div>
         </section>
+        <!---------------------------- SECTION------------------------->
         <section class="section">
             <div class="container">
             <ul class="list header-list">
@@ -101,6 +103,7 @@
             </ul>
             </div>
         </section>
+        <!-------------------------- CUPATION-------------------------->
         <section class="occupation">
             <div class="container">
             <h2 class="occupation-title">Чем мы занимаемся</h2>
@@ -129,8 +132,8 @@
             </ul>
             </div>
         </section>
-        <section class="section team">
-            
+        <!-------------------------- TEAM-------------------------->
+        <section class="section team">            
             <div class="container">
             <h2 class="team-title">Наша команда</h2>
             <ul class="list header-list">
@@ -180,8 +183,7 @@
                 <li class="team-item">
                     <img src="./images/img5.jpg" 
                          alt="фото Ольга Репина" 
-                         width="270"
-                    >
+                         width="270">
                     <div class="team-member-item">
                         <h3 class="team-member">Ольга Репина</h3>
                         <p class="team-description" lang="en">Frontend Developer</p>
@@ -220,8 +222,7 @@
                 <li class="team-item">
                     <img src="./images/img6.jpg" 
                          alt="фото Николай Тарасов"
-                         width="270"
-                    >
+                         width="270">
                     <div class="team-member-item">
                         <h3 class="team-member">Николай Тарасов</h3>
                         <p class="team-description" lang="en">Marketing</p>
@@ -260,8 +261,7 @@
                 <li class="team-item">
                     <img src="./images/img7.jpg"
                          alt="фото Михаил Ермаков"
-                         width="270"
-                    >
+                         width="270">
                     <div class="team-member-item">
                         <h3 class="team-member">Михаил Ермаков</h3>
                         <p class="team-description" lang="en">UI Designer</p>
@@ -300,6 +300,7 @@
             </ul>
             </div>
         </section>
+        <!-------------------------- CLIENTS -------------------------->
         <section class="section">
             <div class="container">
                 <h2 class="team-title">Постоянные клиенты</h2>
@@ -349,8 +350,8 @@
                 </ul>
             </div>
         </section>
-
     </main>
+    <!-------------------------- FOOTER ------------------------->
     <footer class="foother">
     <div class="container foother-list header-list">
     <div>
@@ -420,11 +421,10 @@
                         </button>
                     </div>
                 </form>
-            </div>
-        
-        
-    </div>
+            </div>        
+        </div>
     </footer>
+    <!-------------------------- MODAL-------------------------->
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button type="button" class="modal-close" data-modal-close>
@@ -502,7 +502,6 @@
                 <button type="submit" class="modal-btn">Отправить</button>
              </form>
         </div>
-
     </div>
     <script src="./js/modal.js"></script>
 </body>
