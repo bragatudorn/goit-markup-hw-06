@@ -23,13 +23,13 @@
         <a class="link" href="/"><span class="first-logo">Web</span><span class="header-logo">Studio</span></a>
 
         <!------------------ Навигация на другие страницы -------------->
-        <nav>
+        <nav class="site-nav">
             <ul class="list header-list">
                 <li class="header-item">
                     <a class="link current header-link" href="index.html">Студия</a>
                 </li>
                 <li class="header-item">
-                    <a class="link header-link" href="portofolio.html">Портфолио</a>
+                    <a class="link header-link" href="portfolio.html">Портфолио</a>
                 </li>
                 <li class="header-item">
                     <a class="link header-link" href="#">Контакты</a>
@@ -63,42 +63,43 @@
         <!---------------------------- SECTION------------------------->
         <section class="section">
             <div class="container">
-            <ul class="list header-list">
-                <li class="item-grosse section-item">
+            <h2 class="visually-hidden section-title">Наши преимущества</h2>
+            <ul class="list features-list">
+                <li class=" features-item">
                     <div class="section-icon">
                         <svg class="section-social-icon" width="70" height="70">
                             <use href="./images/icons.svg#icon-antenna"></use>
                         </svg>
                     </div>
-                    <h3 class="section-title">Внимание к деталям</h3>
-                    <p class="section-text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
+                    <h3 class="features-title">Внимание к деталям</h3>
+                    <p class="features-text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
                 </li>
-                <li class="item-grosse section-item">
+                <li class="features-item">
                     <div class="section-icon">
                         <svg class="section-social-icon" width="70" height="70">
                             <use href="./images/icons.svg#icon-clock"></use>
                         </svg>
                     </div>
-                    <h3 class="section-title">Пунктуальность</h3>
-                    <p class="section-text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
+                    <h3 class="features-title">Пунктуальность</h3>
+                    <p class="features-text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
                 </li>
-                <li class="item-grosse section-item">
+                <li class="features-item">
                     <div class="section-icon">
                         <svg class="section-social-icon" width="70" height="70">
                             <use href="./images/icons.svg#icon-diagram"></use>
                         </svg>
                     </div>
-                    <h3 class="section-title">Планирование</h3>
-                    <p class="section-text">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
+                    <h3 class="features-title">Планирование</h3>
+                    <p class="features-text">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
                 </li>
-                <li class="item-grosse section-item">
+                <li class="features-item">
                     <div class="section-icon">
                         <svg class="section-social-icon" width="70" height="70">
                             <use href="./images/icons.svg#icon-astronaut"></use>
                         </svg>
                     </div>
-                    <h3 class="section-title">Современные технологии</h3>
-                    <p class="section-text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
+                    <h3 class="features-title">Современные технологии</h3>
+                    <p class="features-text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
                 </li>
             </ul>
             </div>
@@ -106,7 +107,7 @@
         <!-------------------------- CUPATION-------------------------->
         <section class="occupation">
             <div class="container">
-            <h2 class="occupation-title">Чем мы занимаемся</h2>
+            <h2 class="section-title">Чем мы занимаемся</h2>
             <ul class="list header-list">
                 <li class="section-item">
                     <img src="./images/img.jpg" 
@@ -135,7 +136,7 @@
         <!-------------------------- TEAM-------------------------->
         <section class="section team">            
             <div class="container">
-            <h2 class="team-title">Наша команда</h2>
+            <h2 class="section-title">Наша команда</h2>
             <ul class="list header-list">
                 <li class="team-item">
                     <img src="./images/img4.jpg" 
@@ -303,7 +304,7 @@
         <!-------------------------- CLIENTS -------------------------->
         <section class="section">
             <div class="container">
-                <h2 class="team-title">Постоянные клиенты</h2>
+                <h2 class="section-title">Постоянные клиенты</h2>
                 <ul class="client-social-list list">
                     <li class="client-social-item">
                         <a href="" class="client-social-link">
@@ -355,9 +356,9 @@
     <footer class="foother">
     <div class="container foother-list header-list">
     <div>
-    <a class="link foother-margin" href="/"><span class="first-logo">Web</span><span class="foother-logo">Studio</span></a>
-        <address>             
-            <ul class="list foother-margin"> 
+    <a class="link" href="/"><span class="first-logo">Web</span><span class="foother-logo">Studio</span></a>
+        <address class="foother-margin">             
+            <ul class="list"> 
                 <li class="foother-item">
                     <a class="link foother-address" href="https://goo.gl/maps/ieKD5LUYVfnfS2iM7"
                     target="_blank"
@@ -408,7 +409,7 @@
             <div class="foother-social-contacts">
                 <h3 class="foother-social-title">Подпишитесь на рассылку</h3>
                 <form action="#" class="follow">
-                    <div class="cb-item">
+                    <div class="contact-icon-item">
                         <input class="follow-input" 
                         type="email" 
                         placeholder="E-mail"

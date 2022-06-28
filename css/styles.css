@@ -70,8 +70,12 @@ body {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  color: var(--body-text-color);
-  margin-right: 93px;
+  color: var(--body-text-color);  
+}
+.site-nav {
+  margin-left: 93px;
+  display: flex;
+  align-items: center;
 }
 
 /*--------------HEADER-------------*/
@@ -226,7 +230,7 @@ body {
   margin-bottom: 30px;
 }
 
-.section-title {
+.features-title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -234,6 +238,13 @@ body {
   text-transform: uppercase;
   color: var(--body-text-color);
   margin-bottom: 10px;
+}
+
+.features-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
 }
 
 .team-item:not(:last-child),
@@ -262,12 +273,14 @@ body {
   color: #ffffff;
 }
 
-.item-grosse {
-  max-width: 270px;
+.features-item{
+  flex-basis: calc(100% / 4 - 30px);
+  margin-left: 30px;
+  margin-top: 30px;
 }
 
-.section-text {
-  font-weight: 500;
+.features-text {
+  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -276,14 +289,13 @@ body {
 
 /*--------------- team/occupation -------------*/
 .occupation {
-  padding-bottom: 94px;
+  padding-top: 0px;
 }
 .team {
   background: #f5f4fa;
 }
 
-.occupation-title,
-.team-title {
+.section-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -301,8 +313,7 @@ body {
 .team-member {
   font-weight: 500;
   font-size: 16px;
-  line-height: 19px;
-  /* identical to box height */
+  line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--body-text-color);
@@ -311,8 +322,7 @@ body {
 
 .team-description {
   font-size: 16px;
-  line-height: 19px;
-  /* identical to box height */
+  line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--discription-color);
@@ -419,7 +429,6 @@ body {
 
 .foother-address {
   font-style: normal;
-  font-weight: normal;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -430,7 +439,6 @@ body {
 
 .foother-tel {
   font-style: normal;
-  font-weight: normal;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -465,8 +473,8 @@ body {
   background-color: var(--accent-color);
 }
 
-/*-------------portofolio-----------*/
-.portofolio-title {
+/*-------------portfolio-----------*/
+.portfolio-title {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -475,40 +483,46 @@ body {
   margin-bottom: 4px;
 }
 
-.portofolio-item:not(:nth-child(3n)) {
+.portfolio-item:not(:nth-child(3n)) {
   margin-right: 30px;
 }
 
-.portofolio-item:hover,
-.portofolio-item:focus {
+.portfolio-link {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.portfolio-link:hover,
+.portfolio-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.portofolio-pad {
-  padding: 20px 24px;
+.portfolio-pad {
+  padding: 20px 24px;  
+  border: 1px solid #eeeeee;
+  border-top: none; 
 }
 
-.portofolio-item {
-  background: var(--primary-white-color);
-  border: 1px solid #eeeeee;
-  box-sizing: border-box;
+.portfolio-item {
+  background: var(--primary-white-color);  
   width: 370px;
   transition: box-shadow 250ms linear, color 250ms linear;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
 }
 
-.portofolio-item:hover .portofolio-img-text {
+.portfolio-item:hover .portfolio-img-text {
   transform: translateY(0);
 }
 
-.portofolio-item-wrap {
+.portfolio-item-wrap {
   position: relative;
   overflow: hidden;
 }
 
-.portofolio-img-text {
+.portfolio-img-text {
   position: absolute;
   top: 0;
   right: 0;
@@ -526,18 +540,18 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portofolio-item:not(:nth-child(n + 7)) {
+.portfolio-item:not(:nth-child(n + 7)) {
   margin-bottom: 30px;
 }
 
-.portofolio-description {
+.portfolio-description {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
   color: var(--discription-color);
 }
 
-.portofolio-btn {
+.portfolio-btn {
   background: #f5f4fa;
   border-radius: 4px;
   font-family: "Roboto", sans-serif;
@@ -558,10 +572,10 @@ body {
 
 .ul-btn {
   justify-content: center;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
-.portofolio-btn:hover,
-.portofolio-btn:focus {
+.portfolio-btn:hover,
+.portfolio-btn:focus {
   cursor: pointer;
   color: var(--primary-white-color);
   background: var(--accent-color);
@@ -758,7 +772,7 @@ body {
 }
 .cb-item {
   display: flex;
-  justify-content: center;
+  align-items: center;
   margin-top: 20px;
   margin-bottom: 30px;
 }
@@ -774,6 +788,7 @@ body {
   margin-right: 12px;
   color: rgba(255, 255, 255, 0.6);
   padding-left: 16px;
+  outline: none;
 }
 
 .input-wrap {
@@ -786,6 +801,7 @@ body {
   transform: translateY(-50%);
 }
 
+.follow-input:focus, 
 .form-input:focus {
   border-color: var(--accent-color);
 }
@@ -815,3 +831,6 @@ body {
 .icon-send {
   margin-left: 8px;
 }
+.button-item:not(:last-child) {
+  margin-right: 8px
+ }
