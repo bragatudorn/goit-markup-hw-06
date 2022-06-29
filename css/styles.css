@@ -506,7 +506,7 @@ body {
   position: relative;
 }
 
-.portfolio-item:hover .portfolio-img-text {
+.portfolio-link:hover .portfolio-img-text, .portfolio-link:focus .portfolio-img-text{
   transform: translateY(0);
 }
 
